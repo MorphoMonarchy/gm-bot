@@ -46745,5 +46745,22 @@
         "title": "flexpanel_node_style_set_width"
       }
     ]
+  },
+  "layer_get_flexpanel_node": {
+      "name": "layer_get_flexpanel_node",
+      "pages": [
+          {
+              "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Asset_Management/Rooms/UI_Layers/layer_get_flexpanel_node.htm",
+              "blurb": "Gets the root Flex Panel Node of the specified UI layer. If the layer is not a UI layer, it returns undefined.",
+              "syntax": "layer_get_flexpanel_node(layer_id_or_name)",
+              "args": [
+                  {
+                      "argument": "layer_id_or_name",
+                      "description": "The layer handle or the name of the layer to retrieve the Flex Panel Node from"
+                  }
+              ],
+              "title": "layer_get_flexpanel_node"
+          }
+      ]
   }
 }
