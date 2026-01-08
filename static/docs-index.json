@@ -45367,31 +45367,6 @@
       }
     ]
   },
-  "bettertest": {
-    "name": "bettertest",
-    "pages": [
-      {
-        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/url_open_full.htm",
-        "blurb": "This will open the specified URL on the browser of the chosen target device, or, if you are using the HTML5 module, in the currently open browser.",
-        "syntax": "url_open_full(url, target, options)",
-        "args": [
-          {
-            "argument": "url",
-            "description": "The URL (website address) to link to."
-          },
-          {
-            "argument": "target",
-            "description": "This is the target area to open the URL in (see description). This is only used in HTML5."
-          },
-          {
-            "argument": "options",
-            "description": "Standard browser options (see description). This is only used in HTML5."
-          }
-        ],
-        "title": "url_open_full"
-      }
-    ]
-  },
   "webgl_enabled": {
     "name": "webgl_enabled",
     "pages": [
