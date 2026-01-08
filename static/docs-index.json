@@ -1366,4 +1366,2010 @@
       }
     ]
   },
+<<<<<<< Updated upstream
 }
+=======
+  "variable_global_get": {
+    "name": "variable_global_get",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_global_get.htm",
+        "blurb": "With this function you can get the value from a given named global variable. You supply the name of the global variable to get the value of as a string (see example code below) and the function will return the value held by the global variable or undefined if the variable does not exist.",
+        "syntax": "variable_global_get(name)",
+        "args": [
+          {
+            "argument": "name",
+            "description": "The name of the global variable to get (as a string)"
+          }
+        ],
+        "title": "variable_global_get"
+      }
+    ]
+  },
+  "variable_global_set": {
+    "name": "variable_global_set",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_global_set.htm",
+        "blurb": "With this function you can set the value of a given global variable. You supply the name of the global variable to set the value of as a string (see example code below), and then the value to set (can be any valid data type). If the global variable does not exist already in the game it will be created and then assigned the value.",
+        "syntax": "variable_global_set(name, val)",
+        "args": [
+          {
+            "argument": "name",
+            "description": "The name of the global variable to set (as a string)"
+          },
+          {
+            "argument": "val",
+            "description": "The value to set the global variable to"
+          }
+        ],
+        "title": "variable_global_set"
+      }
+    ]
+  },
+  "variable_instance_exists": {
+    "name": "variable_instance_exists",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_instance_exists.htm",
+        "blurb": "With this function you can check whether an instance scope variable exists or not. You supply the unique instance ID value (which can be found from the Instance Properties in the room editor, or is returned when you call the function instance_create_layer()) as well as the variable name to check for as a string (see example code below). The function will return true if a variable with the given name exists for the instance and false otherwise.",
+        "syntax": "variable_instance_exists(instance_id, name)",
+        "args": [
+          {
+            "argument": "instance_id",
+            "description": "The unique ID value of the instance to check"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the variable to check for"
+          }
+        ],
+        "title": "variable_instance_exists"
+      }
+    ]
+  },
+  "variable_instance_get": {
+    "name": "variable_instance_get",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_instance_get.htm",
+        "blurb": "With this function you can get the value from a given named variable. You supply the unique instance ID value (which can be found from the Instance Properties in the room editor, or is returned when you call the function instance_create_layer()) as well as the name of the variable to get the value of as a string (see example code below). The function will return the value held by the variable, or undefined if the variable does not exist.",
+        "syntax": "variable_instance_get(instance_id, name)",
+        "args": [
+          {
+            "argument": "instance_id",
+            "description": "The unique ID value of the instance to use"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the variable to get (as a string)"
+          }
+        ],
+        "title": "variable_instance_get"
+      }
+    ]
+  },
+  "variable_instance_get_names": {
+    "name": "variable_instance_get_names",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_instance_get_names.htm",
+        "blurb": "With this function you can retrieve an array populated with the instance variable names for an instance, or the global variables for a game. When you pass in an instance ID value, each entry in the array will be a string of the variable name that corresponds to an instance scope variable that has been created in the instance. However if you pass in the keyword global, each entry in the array will be a string of the variable name that corresponds to an global scope variable.",
+        "syntax": "variable_instance_get_names(instance_id/global)",
+        "args": [
+          {
+            "argument": "instance_id/global",
+            "description": "The unique ID value of the instance to check or the keyword global"
+          }
+        ],
+        "title": "variable_instance_get_names"
+      }
+    ]
+  },
+  "variable_instance_names_count": {
+    "name": "variable_instance_names_count",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_instance_names_count.htm",
+        "blurb": "This function returns the total number of variables defined for an instance.",
+        "syntax": "variable_instance_names_count(instance_id)",
+        "args": [
+          {
+            "argument": "instance_id",
+            "description": "The unique ID value of the instance to check."
+          }
+        ],
+        "title": "variable_instance_names_count"
+      }
+    ]
+  },
+  "variable_instance_set": {
+    "name": "variable_instance_set",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_instance_set.htm",
+        "blurb": "With this function you can set the value of a given variable in an instance. You supply the unique instance ID value (which can be found from the Instance Properties in the room editor, or is returned when you call the function instance_create_layer()) as well as the name of the variable to set the value of as a string (see example code below), and then finally the value to set (can be any valid data type). If the variable does not exist already in the instance it will be created and then assigned the value.",
+        "syntax": "variable_instance_set(instance_id, name, val)",
+        "args": [
+          {
+            "argument": "instance_id",
+            "description": "The unique ID value of the instance to use"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the variable to set (as a string)"
+          },
+          {
+            "argument": "val",
+            "description": "The value to set the variable to"
+          }
+        ],
+        "title": "variable_instance_set"
+      }
+    ]
+  },
+  "struct_exists": {
+    "name": "struct_exists",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_struct_exists.htm",
+        "blurb": "This function checks whether a variable exists within the given struct or not. You supply the struct reference to use as well as the variable name to check for as a string (see example code below). The function will return true if a variable with the given name exists for the struct and false otherwise.",
+        "syntax": "struct_exists(struct, name)",
+        "args": [
+          {
+            "argument": "struct",
+            "description": "The struct reference to check"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the struct variable to check for (as a string)"
+          }
+        ],
+        "title": "struct_exists"
+      }
+    ]
+  },
+  "struct_get": {
+    "name": "struct_get",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_struct_get.htm",
+        "blurb": "This function gets the value from a given named variable within a struct.",
+        "syntax": "struct_get(struct, name)",
+        "args": [
+          {
+            "argument": "struct",
+            "description": "The struct reference to use"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the variable to get (as a string)"
+          }
+        ],
+        "title": "struct_get"
+      }
+    ]
+  },
+  "struct_get_names": {
+    "name": "struct_get_names",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_struct_get_names.htm",
+        "blurb": "This function returns an array with the variable names from a struct.",
+        "syntax": "struct_get_names(struct)",
+        "args": [
+          {
+            "argument": "struct",
+            "description": "The struct reference to check."
+          }
+        ],
+        "title": "struct_get_names"
+      }
+    ]
+  },
+  "struct_names_count": {
+    "name": "struct_names_count",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_struct_names_count.htm",
+        "blurb": "This function gets the total number number of variables defined in a struct.",
+        "syntax": "struct_names_count(struct_id)",
+        "args": [
+          {
+            "argument": "struct_id",
+            "description": "The unique ID value of the struct to check."
+          }
+        ],
+        "title": "struct_names_count"
+      }
+    ]
+  },
+  "struct_remove": {
+    "name": "struct_remove",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_struct_remove.htm",
+        "blurb": "This function removes a variable from a struct. You supply the struct ID to remove the variable from and the string name of the variable to be removed.",
+        "syntax": "struct_remove(struct, name)",
+        "args": [
+          {
+            "argument": "struct",
+            "description": "The struct reference to remove the variable from"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the variable to remove (as a string)"
+          }
+        ],
+        "title": "struct_remove"
+      }
+    ]
+  },
+  "struct_set": {
+    "name": "struct_set",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Variable_Functions/variable_struct_set.htm",
+        "blurb": "With this function you can set the value of a given variable in a struct. You supply the struct reference as well as the name of the variable to set the value of as a string (see example code below), and then finally the value to set (can be any valid data type). If the variable does not exist already in the struct it will be created and then assigned the value.",
+        "syntax": "struct_set(struct, name, val)",
+        "args": [
+          {
+            "argument": "struct",
+            "description": "The struct reference to set"
+          },
+          {
+            "argument": "name",
+            "description": "The name of the variable to set (as a string)"
+          },
+          {
+            "argument": "val",
+            "description": "The value to set the variable to"
+          }
+        ],
+        "title": "struct_set"
+      }
+    ]
+  },
+  "analytics_event": {
+    "name": "analytics_event",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/analytics_event.htm",
+        "blurb": "This function will send the specified text to the analytics provider that you have set up through the HTML5 Game Options. This function can be used to create a custom analytic to track something outside of the scope of the provider being used.",
+        "syntax": "analytics_event(string)",
+        "args": [
+          {
+            "argument": "string",
+            "description": "A string to send to the provider"
+          }
+        ],
+        "title": "analytics_event"
+      }
+    ]
+  },
+  "analytics_event_ext": {
+    "name": "analytics_event_ext",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/analytics_event_ext.htm",
+        "blurb": "This function will send the specified text to the analytics provider that you have set up through the HTML5 Game Options. This function can be used to create a custom analytic to track something outside of the scope of the provider being used, and will also accept custom parameter/value pairs, where the parameter is a string and the value a real number. For Google Analytics, you can only add in one extra pair while Flurry will accept up to 7.",
+        "syntax": "analytics_event_ext(string, string_param, value)",
+        "args": [
+          {
+            "argument": "string",
+            "description": "A string to send to the provider."
+          },
+          {
+            "argument": "string_param[0 -9]",
+            "description": "The parameter to send (a string)."
+          },
+          {
+            "argument": "value[0 - 9]",
+            "description": "The value of the parameter (a real number)."
+          }
+        ],
+        "title": "analytics_event_ext"
+      }
+    ]
+  },
+  "browser_height": {
+    "name": "browser_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/browser_height.htm",
+        "blurb": "This variable holds the height (in pixels) of the browser the game is being run in. If no browser is present then the window size is returned.",
+        "syntax": "browser_height",
+        "args": [],
+        "title": "browser_height"
+      }
+    ]
+  },
+  "browser_input_capture": {
+    "name": "browser_input_capture",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/browser_input_capture.htm",
+        "blurb": "With this function you can set whether the browser window should capture all input (set it to false) or whether the game should capture the input (set it to true). Note that this function is for use with the HTML5 module only.",
+        "syntax": "browser_input_capture(enable)",
+        "args": [
+          {
+            "argument": "enable",
+            "description": "Enable or disable game input capture"
+          }
+        ],
+        "title": "browser_input_capture"
+      }
+    ]
+  },
+  "browser_width": {
+    "name": "browser_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/browser_width.htm",
+        "blurb": "This variable holds the width (in pixels) of the browser the game is being run in. If no browser is present then the window size is returned.",
+        "syntax": "browser_width",
+        "args": [],
+        "title": "browser_width"
+      }
+    ]
+  },
+  "clickable_add": {
+    "name": "clickable_add",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_add.htm",
+        "blurb": "With this function you can create a custom, clickable, icon that acts as a \"button\" outside of the game canvas, but within the browser window itself. The function will return an ID value which must be stored in a variable to be used in all further button functions that reference the new clickable. This function is very useful to prevent the browser creating a pop-up window when clicking on the button as it is all done through GameMaker itself.",
+        "syntax": "clickable_add(x, y, tpe, url, target, params)",
+        "args": [
+          {
+            "argument": "x",
+            "description": "The x position within the window."
+          },
+          {
+            "argument": "y",
+            "description": "The y position within the window."
+          },
+          {
+            "argument": "tpe",
+            "description": "The texture page entry for the sprite to be used."
+          },
+          {
+            "argument": "url",
+            "description": "The URL (website address) to link to, or the script to be run."
+          },
+          {
+            "argument": "target",
+            "description": "This is the target area to open the URL in (see description)."
+          },
+          {
+            "argument": "params",
+            "description": "The various parameters for the icon (see description)."
+          }
+        ],
+        "title": "clickable_add"
+      }
+    ]
+  },
+  "clickable_add_ext": {
+    "name": "clickable_add_ext",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_add_ext.htm",
+        "blurb": "With this function you can create a custom, clickable, icon that acts as a \"button\" outside of the game canvas, but within the browser window itself. The function will return an ID value which must be stored in a variable to be used in all further button functions that reference the new clickable. This function is very useful to prevent the browser creating a pop-up window when clicking on the button as it is all done through GameMaker itself.",
+        "syntax": "clickable_add_ext(x, y, tpe, url, target, params, alpha, scale)",
+        "args": [
+          {
+            "argument": "x",
+            "description": "The x position within the window."
+          },
+          {
+            "argument": "y",
+            "description": "The y position within the window."
+          },
+          {
+            "argument": "tpe",
+            "description": "The texture page entry for the sprite to be used."
+          },
+          {
+            "argument": "url",
+            "description": "The URL (website address) to link to, or the script to be run."
+          },
+          {
+            "argument": "target",
+            "description": "This is the target area to open the URL in (see description)."
+          },
+          {
+            "argument": "params",
+            "description": "The various parameters for the icon (see description)."
+          },
+          {
+            "argument": "alpha",
+            "description": "The image alpha of the icon (default 1)."
+          },
+          {
+            "argument": "scale",
+            "description": "The scale of the icon (default 1)."
+          }
+        ],
+        "title": "clickable_add_ext"
+      }
+    ]
+  },
+  "clickable_change": {
+    "name": "clickable_change",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_change.htm",
+        "blurb": "With this function you can change the sprite and position of a clickable icon previously created with clickable_add(). Please note that the position is based on the window, not the canvas, (0,0) position and that the sprite must be referenced directly from the texture page (see: sprite_get_tpe()).",
+        "syntax": "clickable_change(index, tpe, x, y)",
+        "args": [
+          {
+            "argument": "index",
+            "description": "The index of the clickable icon to change."
+          },
+          {
+            "argument": "tpe",
+            "description": "The texture page entry for the sprite to be used."
+          },
+          {
+            "argument": "x",
+            "description": "The new x position within the window."
+          },
+          {
+            "argument": "y",
+            "description": "The new y position within the window."
+          }
+        ],
+        "title": "clickable_change"
+      }
+    ]
+  },
+  "clickable_change_ext": {
+    "name": "clickable_change_ext",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_change_ext.htm",
+        "blurb": "With this function you can change the sprite and position of a clickable icon previously created with clickable_add(). Bear in mind that the position is based on the window, not the canvas, (0,0) position and that the sprite must be referenced directly from the texture page (see: sprite_get_tpe()). This function also permits you to change the scale of the sprite used (as a multiplier so that 1 is the default, 0.5 would be half and 2 would be double) and the alpha value from 0 (fully transparent) to 1 (fully opaque) for the final icon on the screen.",
+        "syntax": "clickable_change_ext(index, tpe, x, y, alpha, scale)",
+        "args": [
+          {
+            "argument": "index",
+            "description": "The index of the clickable icon to change."
+          },
+          {
+            "argument": "tpe",
+            "description": "The texture page entry for the sprite to be used"
+          },
+          {
+            "argument": "x",
+            "description": "The new x position within the window."
+          },
+          {
+            "argument": "y",
+            "description": "The new y position within the window."
+          },
+          {
+            "argument": "scale",
+            "description": "The scale of the icon (default 1)."
+          },
+          {
+            "argument": "alpha",
+            "description": "The image alpha of the icon (default 1)."
+          }
+        ],
+        "title": "clickable_change_ext"
+      }
+    ]
+  },
+  "clickable_delete": {
+    "name": "clickable_delete",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_delete.htm",
+        "blurb": "This function must be used to remove a clickable icon previously created with clickable_add() from the game window.",
+        "syntax": "clickable_delete(index)",
+        "args": [
+          {
+            "argument": "index",
+            "description": "Index of the clickable icon to remove."
+          }
+        ],
+        "title": "clickable_delete"
+      }
+    ]
+  },
+  "clickable_exists": {
+    "name": "clickable_exists",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_exists.htm",
+        "blurb": "This function returns whether a clickable DOM icon has been created with the specified index exists or not. Please note, that the value used for checking must have been initialised previously or else you will get an error causing GameMaker to close.",
+        "syntax": "clickable_exists(index)",
+        "args": [
+          {
+            "argument": "index",
+            "description": "The index of the clickable to check."
+          }
+        ],
+        "title": "clickable_exists"
+      }
+    ]
+  },
+  "clickable_set_style": {
+    "name": "clickable_set_style",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/clickable_set_style.htm",
+        "blurb": "This function lets you set the CSS style properties for the given button via the key/value pairs in the provided DS Map. You need to have previously created the both the button element (using clickable_add()) and the DS Map and supply the stored indices to each as arguments.",
+        "syntax": "clickable_set_style(index, map)",
+        "args": [
+          {
+            "argument": "index",
+            "description": "The index of the clickable icon to style."
+          },
+          {
+            "argument": "map",
+            "description": "The index of the DS Map to set the style from."
+          }
+        ],
+        "title": "clickable_set_style"
+      }
+    ]
+  },
+  "url_get_domain": {
+    "name": "url_get_domain",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/url_get_domain.htm",
+        "blurb": "You can use this to get the domain where your HTML5 game is being played.",
+        "syntax": "url_get_domain()",
+        "args": [],
+        "title": "url_get_domain"
+      }
+    ]
+  },
+  "url_open": {
+    "name": "url_open",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/url_open.htm",
+        "blurb": "This will open the specified URL on the browser of the chosen target device, or, if you are using the HTML5 module, in the currently open browser.",
+        "syntax": "url_open(url)",
+        "args": [
+          {
+            "argument": "url",
+            "description": "The URL (website address) to link to."
+          }
+        ],
+        "title": "url_open"
+      }
+    ]
+  },
+  "url_open_ext": {
+    "name": "url_open_ext",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/url_open_ext.htm",
+        "blurb": "This will open the specified URL on the browser of the chosen target device, or, if you are using the HTML5 module, in the currently open browser.",
+        "syntax": "url_open_ext(url, target)",
+        "args": [
+          {
+            "argument": "url",
+            "description": "The URL (website address) to link to."
+          },
+          {
+            "argument": "target",
+            "description": "This is the target area to open the URL in. It is only used when using the HTML5 module."
+          }
+        ],
+        "title": "url_open_ext"
+      }
+    ]
+  },
+  "url_open_full": {
+    "name": "url_open_full",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/url_open_full.htm",
+        "blurb": "This will open the specified URL on the browser of the chosen target device, or, if you are using the HTML5 module, in the currently open browser.",
+        "syntax": "url_open_full(url, target, options)",
+        "args": [
+          {
+            "argument": "url",
+            "description": "The URL (website address) to link to."
+          },
+          {
+            "argument": "target",
+            "description": "This is the target area to open the URL in (see description). This is only used in HTML5."
+          },
+          {
+            "argument": "options",
+            "description": "Standard browser options (see description). This is only used in HTML5."
+          }
+        ],
+        "title": "url_open_full"
+      }
+    ]
+  },
+  "webgl_enabled": {
+    "name": "webgl_enabled",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/webgl_enabled.htm",
+        "blurb": "This read-only variable will return whether WebGL is enabled (true) or not (false) for your game. It will only work for those games running through a browser (ie: HTML5), and for all other platforms it will return true.",
+        "syntax": "webgl_enabled",
+        "args": [],
+        "title": "webgl_enabled"
+      }
+    ]
+  },
+  "syntax": "extension_get_version(extension_name)",
+  "flexpanel_calculate_layout": {
+    "name": "flexpanel_calculate_layout",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_calculate_layout.htm",
+        "blurb": "This function calculates the layout data for the given node and all of its children. The calculated layouts are returned with flexpanel_node_layout_get_position.",
+        "syntax": "flexpanel_calculate_layout(root, width, height, direction)",
+        "args": [
+          {
+            "argument": "root",
+            "description": "The node for which calculations are performed"
+          },
+          {
+            "argument": "width",
+            "description": "The width that the root node is calculated against"
+          },
+          {
+            "argument": "height",
+            "description": "The height that the root node is calculated against"
+          },
+          {
+            "argument": "direction",
+            "description": "The direction to use for all nodes"
+          }
+        ],
+        "title": "flexpanel_calculate_layout"
+      }
+    ]
+  },
+  "flexpanel_create_node": {
+    "name": "flexpanel_create_node",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_create_node.htm",
+        "blurb": "This function creates a new Flex Panel node.",
+        "syntax": "flexpanel_create_node([struct_or_json])",
+        "args": [
+          {
+            "argument": "struct_or_json",
+            "description": "OPTIONAL Struct with node information or string containing JSON data, members described on this page"
+          }
+        ],
+        "title": "flexpanel_create_node"
+      }
+    ]
+  },
+  "flexpanel_delete_node": {
+    "name": "flexpanel_delete_node",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_delete_node.htm",
+        "blurb": "This function deletes the given Flex Panel Node. You can choose whether it should also delete all of its child nodes, which it won't do by default.",
+        "syntax": "flexpanel_delete_node(node, [recursive])",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to delete"
+          },
+          {
+            "argument": "recursive",
+            "description": "OPTIONAL Whether to delete all child nodes (true) or not (false, default)"
+          }
+        ],
+        "title": "flexpanel_delete_node"
+      }
+    ]
+  },
+  "flexpanel_node_get_child": {
+    "name": "flexpanel_node_get_child",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_child.htm",
+        "blurb": "This function looks for a child node in the given parent node and returns the child.",
+        "syntax": "flexpanel_node_get_child(node, index_or_name)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The parent node from which the child will be retrieved"
+          },
+          {
+            "argument": "index_or_name",
+            "description": "Either the index of the node or its name"
+          }
+        ],
+        "title": "flexpanel_node_get_child"
+      }
+    ]
+  },
+  "flexpanel_node_get_child_hash": {
+    "name": "flexpanel_node_get_child_hash",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_child_hash.htm",
+        "blurb": "This function is the same as flexpanel_node_get_child, but it takes either the name of the child to look for or a hash of its name.",
+        "syntax": "flexpanel_node_get_child_hash(node, hash_or_name)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The parent node from which the child will be retrieved"
+          },
+          {
+            "argument": "hash_or_name",
+            "description": "The name of the child or a hash of its name"
+          }
+        ],
+        "title": "flexpanel_node_get_child_hash"
+      }
+    ]
+  },
+  "flexpanel_node_get_data": {
+    "name": "flexpanel_node_get_data",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_data.htm",
+        "blurb": "This function returns the data struct of a node.",
+        "syntax": "flexpanel_node_get_data(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to get the data struct of"
+          }
+        ],
+        "title": "flexpanel_node_get_data"
+      }
+    ]
+  },
+  "flexpanel_node_get_measure_function": {
+    "name": "flexpanel_node_get_measure_function",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_measure_function.htm",
+        "blurb": "This function returns the Measure Function set for the given Flex Panel Node. If none is set, it will return undefined.",
+        "syntax": "flexpanel_node_get_measure_function(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to check"
+          }
+        ],
+        "title": "flexpanel_node_get_measure_function"
+      }
+    ]
+  },
+  "flexpanel_node_get_name": {
+    "name": "flexpanel_node_get_name",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_name.htm",
+        "blurb": "This function returns the name set for the given node. Will return undefined if no name was set.",
+        "syntax": "flexpanel_node_get_name(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to get the name of"
+          }
+        ],
+        "title": "flexpanel_node_get_name"
+      }
+    ]
+  },
+  "flexpanel_node_get_num_children": {
+    "name": "flexpanel_node_get_num_children",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_num_children.htm",
+        "blurb": "This function returns the number of children in the given node.",
+        "syntax": "flexpanel_node_get_num_children(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The parent node"
+          }
+        ],
+        "title": "flexpanel_node_get_num_children"
+      }
+    ]
+  },
+  "flexpanel_node_get_parent": {
+    "name": "flexpanel_node_get_parent",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_parent.htm",
+        "blurb": "This function returns the parent node of the given node, or undefined if it has no parent.",
+        "syntax": "flexpanel_node_get_parent(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to get the parent of"
+          }
+        ],
+        "title": "flexpanel_node_get_parent"
+      }
+    ]
+  },
+  "flexpanel_node_get_struct": {
+    "name": "flexpanel_node_get_struct",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_get_struct.htm",
+        "blurb": "This function returns all the properties of the given node and its children as a struct.",
+        "syntax": "flexpanel_node_get_struct(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to get the struct for"
+          }
+        ],
+        "title": "flexpanel_node_get_struct"
+      }
+    ]
+  },
+  "flexpanel_node_insert_child": {
+    "name": "flexpanel_node_insert_child",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_insert_child.htm",
+        "blurb": "This function inserts the node node (second argument) into the node root (first argument) as a child.",
+        "syntax": "flexpanel_node_insert_child(root, node, index)",
+        "args": [
+          {
+            "argument": "root",
+            "description": "The container to insert into, i.e. the parent"
+          },
+          {
+            "argument": "node",
+            "description": "The container to insert, i.e. the child"
+          },
+          {
+            "argument": "index",
+            "description": "The index of the child within the parent, e.g. 0, 1, 2, etc."
+          }
+        ],
+        "title": "flexpanel_node_insert_child"
+      }
+    ]
+  },
+  "flexpanel_node_layout_get_position": {
+    "name": "flexpanel_node_layout_get_position",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_layout_get_position.htm",
+        "blurb": "This function returns a struct with the layout information of the given node. You must have called flexpanel_calculate_layout at least once on the node before calling this, otherwise all returned data will be 0.",
+        "syntax": "flexpanel_node_layout_get_position(node, [relative])",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to get the layout position of"
+          },
+          {
+            "argument": "relative",
+            "description": "OPTIONAL Whether to return relative positions (true, default) or absolute positions (false)"
+          }
+        ],
+        "title": "flexpanel_node_layout_get_position"
+      }
+    ]
+  },
+  "flexpanel_node_remove_all_children": {
+    "name": "flexpanel_node_remove_all_children",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_remove_all_children.htm",
+        "blurb": "This function removes all direct children from the given node (but doesn't delete them).",
+        "syntax": "flexpanel_node_remove_all_children(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node from which all children will be removed"
+          }
+        ],
+        "title": "flexpanel_node_remove_all_children"
+      }
+    ]
+  },
+  "flexpanel_node_remove_child": {
+    "name": "flexpanel_node_remove_child",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_remove_child.htm",
+        "blurb": "This function removes a node from its parent's child list. This will not remove the node from memory, so if you do not need it anymore, you must also delete it.",
+        "syntax": "flexpanel_node_remove_child(root, node)",
+        "args": [
+          {
+            "argument": "root",
+            "description": "The parent node"
+          },
+          {
+            "argument": "node",
+            "description": "The child node to remove from the parent"
+          }
+        ],
+        "title": "flexpanel_node_remove_child"
+      }
+    ]
+  },
+  "flexpanel_node_set_measure_function": {
+    "name": "flexpanel_node_set_measure_function",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_set_measure_function.htm",
+        "blurb": "This function sets the Measure Function of the given Flex Panel Node (must be a leaf node, i.e. a node that has no children).",
+        "syntax": "flexpanel_node_set_measure_function(node, function)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "function",
+            "description": "The Measure Function to use"
+          }
+        ],
+        "title": "flexpanel_node_set_measure_function"
+      }
+    ]
+  },
+  "flexpanel_node_set_name": {
+    "name": "flexpanel_node_set_name",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/flexpanel_node_set_name.htm",
+        "blurb": "This function sets the name of the given node.",
+        "syntax": "flexpanel_node_set_name(node, name)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to change the name of"
+          },
+          {
+            "argument": "name",
+            "description": "The new name"
+          }
+        ],
+        "title": "flexpanel_node_set_name"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_align_content": {
+    "name": "flexpanel_node_style_get_align_content",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_align_content.htm",
+        "blurb": "This function returns the alignContent property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_align_content(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_align_content"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_align_items": {
+    "name": "flexpanel_node_style_get_align_items",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_align_items.htm",
+        "blurb": "This function returns the alignItems property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_align_items(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_align_items"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_align_self": {
+    "name": "flexpanel_node_style_get_align_self",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_align_self.htm",
+        "blurb": "This function returns the alignSelf property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_align_self(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_align_self"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_aspect_ratio": {
+    "name": "flexpanel_node_style_get_aspect_ratio",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_aspect_ratio.htm",
+        "blurb": "This function returns the aspectRatio property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_aspect_ratio(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_aspect_ratio"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_border": {
+    "name": "flexpanel_node_style_get_border",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_border.htm",
+        "blurb": "This function returns the border for the given edge(s) of a Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_border(node, edge)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to get the border for."
+          }
+        ],
+        "title": "flexpanel_node_style_get_border"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_direction": {
+    "name": "flexpanel_node_style_get_direction",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_direction.htm",
+        "blurb": "This function returns the direction property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_direction(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_direction"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_display": {
+    "name": "flexpanel_node_style_get_display",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_display.htm",
+        "blurb": "This function returns the display property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_display(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_display"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_flex": {
+    "name": "flexpanel_node_style_get_flex",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_flex.htm",
+        "blurb": "This function returns the flex property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_flex(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_flex"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_flex_basis": {
+    "name": "flexpanel_node_style_get_flex_basis",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_flex_basis.htm",
+        "blurb": "This function returns the flexBasis property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_flex_basis(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_flex_basis"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_flex_direction": {
+    "name": "flexpanel_node_style_get_flex_direction",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_flex_direction.htm",
+        "blurb": "This function returns the flexDirection property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_flex_direction(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_flex_direction"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_flex_grow": {
+    "name": "flexpanel_node_style_get_flex_grow",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_flex_grow.htm",
+        "blurb": "This function returns the flexGrow property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_flex_grow(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_flex_grow"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_flex_shrink": {
+    "name": "flexpanel_node_style_get_flex_shrink",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_flex_shrink.htm",
+        "blurb": "This function returns the flexShrink property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_flex_shrink(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_flex_shrink"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_flex_wrap": {
+    "name": "flexpanel_node_style_get_flex_wrap",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_flex_wrap.htm",
+        "blurb": "This function returns the flexWrap property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_flex_wrap(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_flex_wrap"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_gap": {
+    "name": "flexpanel_node_style_get_gap",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_gap.htm",
+        "blurb": "This function returns the gap of the given Flex Panel Node for the specified gutter(s).",
+        "syntax": "flexpanel_node_style_get_gap(node, gutter)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          },
+          {
+            "argument": "gutter",
+            "description": "The specific gap property to check."
+          }
+        ],
+        "title": "flexpanel_node_style_get_gap"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_height": {
+    "name": "flexpanel_node_style_get_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_height.htm",
+        "blurb": "This function returns the height property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_height(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_height"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_justify_content": {
+    "name": "flexpanel_node_style_get_justify_content",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_justify_content.htm",
+        "blurb": "This function returns the justifyContent property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_justify_content(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_justify_content"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_margin": {
+    "name": "flexpanel_node_style_get_margin",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_margin.htm",
+        "blurb": "This function returns the margin for the given edge(s) of a Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_margin(node, edge)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to get the margin for."
+          }
+        ],
+        "title": "flexpanel_node_style_get_margin"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_max_height": {
+    "name": "flexpanel_node_style_get_max_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_max_height.htm",
+        "blurb": "This function returns the maxHeight property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_max_height(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_max_height"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_max_width": {
+    "name": "flexpanel_node_style_get_max_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_max_width.htm",
+        "blurb": "This function returns the maxWidth property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_max_width(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_max_width"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_min_height": {
+    "name": "flexpanel_node_style_get_min_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_min_height.htm",
+        "blurb": "This function returns the minHeight property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_min_height(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_min_height"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_min_width": {
+    "name": "flexpanel_node_style_get_min_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_min_width.htm",
+        "blurb": "This function returns the minWidth property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_min_width(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_min_width"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_padding": {
+    "name": "flexpanel_node_style_get_padding",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_padding.htm",
+        "blurb": "This function returns the padding for the given edge(s) of a Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_padding(node, edge)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to get the padding for."
+          }
+        ],
+        "title": "flexpanel_node_style_get_padding"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_position": {
+    "name": "flexpanel_node_style_get_position",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_position.htm",
+        "blurb": "This function returns the inset position for the given edge of a Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_position(node, edge)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to get the inset for."
+          }
+        ],
+        "title": "flexpanel_node_style_get_position"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_position_type": {
+    "name": "flexpanel_node_style_get_position_type",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_position_type.htm",
+        "blurb": "This function returns the position property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_position_type(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_position_type"
+      }
+    ]
+  },
+  "flexpanel_node_style_get_width": {
+    "name": "flexpanel_node_style_get_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_get_width.htm",
+        "blurb": "This function returns the width property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_get_width(node)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to read."
+          }
+        ],
+        "title": "flexpanel_node_style_get_width"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_align_content": {
+    "name": "flexpanel_node_style_set_align_content",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_align_content.htm",
+        "blurb": "This function sets the alignContent property of the given Flex Panel Node. You can pass a Flex Panel Justify Content Constant.",
+        "syntax": "flexpanel_node_style_set_align_content(node, align)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "align",
+            "description": "The alignment to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_align_content"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_align_items": {
+    "name": "flexpanel_node_style_set_align_items",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_align_items.htm",
+        "blurb": "This function sets the alignItems property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_align_items(node, align)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "align",
+            "description": "The alignment to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_align_items"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_align_self": {
+    "name": "flexpanel_node_style_set_align_self",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_align_self.htm",
+        "blurb": "This function sets the alignSelf property of the given Flex Panel Node. You can pass a Flex Panel Alignment Constant.",
+        "syntax": "flexpanel_node_style_set_align_self(node, align)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "align",
+            "description": "The alignment to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_align_self"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_aspect_ratio": {
+    "name": "flexpanel_node_style_set_aspect_ratio",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_aspect_ratio.htm",
+        "blurb": "This function sets the aspectRatio property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_aspect_ratio(node, aspect_ratio)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "aspect_ratio",
+            "description": "The aspect ratio"
+          }
+        ],
+        "title": "flexpanel_node_style_set_aspect_ratio"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_border": {
+    "name": "flexpanel_node_style_set_border",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_border.htm",
+        "blurb": "This function sets the border for the given edge(s) of a Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_border(node, edge, size)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to set the border for"
+          },
+          {
+            "argument": "size",
+            "description": "The size of the border"
+          }
+        ],
+        "title": "flexpanel_node_style_set_border"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_direction": {
+    "name": "flexpanel_node_style_set_direction",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_direction.htm",
+        "blurb": "This function sets the direction property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_direction(node, direction)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "direction",
+            "description": "The layout direction to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_direction"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_display": {
+    "name": "flexpanel_node_style_set_display",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_display.htm",
+        "blurb": "This function sets the display property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_display(node, display)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "display",
+            "description": "The display type to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_display"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_flex": {
+    "name": "flexpanel_node_style_set_flex",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_flex.htm",
+        "blurb": "This function sets the flex property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_flex(node, flex)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "flex",
+            "description": "The flex value to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_flex"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_flex_basis": {
+    "name": "flexpanel_node_style_set_flex_basis",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_flex_basis.htm",
+        "blurb": "This function sets the flexBasis property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_flex_basis(node, value, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "value",
+            "description": "The value to set"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit of the value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_flex_basis"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_flex_direction": {
+    "name": "flexpanel_node_style_set_flex_direction",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_flex_direction.htm",
+        "blurb": "This function sets the flexDirection property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_flex_direction(node, flex_direction)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "flex_direction",
+            "description": "The flex direction to set"
+          }
+        ],
+        "title": "flexpanel_node_style_set_flex_direction"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_flex_grow": {
+    "name": "flexpanel_node_style_set_flex_grow",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_flex_grow.htm",
+        "blurb": "This function sets the flexGrow property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_flex_grow(node, grow)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "grow",
+            "description": "The grow value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_flex_grow"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_flex_shrink": {
+    "name": "flexpanel_node_style_set_flex_shrink",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_flex_shrink.htm",
+        "blurb": "This function sets the flexShrink property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_flex_shrink(node, shrink)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "shrink",
+            "description": "The flex shrink value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_flex_shrink"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_flex_wrap": {
+    "name": "flexpanel_node_style_set_flex_wrap",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_flex_wrap.htm",
+        "blurb": "This function sets the flexWrap property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_flex_wrap(node, wrap)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "wrap",
+            "description": "The wrap mode to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_flex_wrap"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_gap": {
+    "name": "flexpanel_node_style_set_gap",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_gap.htm",
+        "blurb": "This function sets the gap size of the given Flex Panel Node. You must supply the gutter where the gap is applied:",
+        "syntax": "flexpanel_node_style_set_gap(node, gutter, size)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "gutter",
+            "description": "The gutter to set"
+          },
+          {
+            "argument": "size",
+            "description": "The gutter size"
+          }
+        ],
+        "title": "flexpanel_node_style_set_gap"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_height": {
+    "name": "flexpanel_node_style_set_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_height.htm",
+        "blurb": "This function sets the height property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_height(node, height, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "height",
+            "description": "The height to set"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit to use for the height"
+          }
+        ],
+        "title": "flexpanel_node_style_set_height"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_justify_content": {
+    "name": "flexpanel_node_style_set_justify_content",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_justify_content.htm",
+        "blurb": "This function sets the justifyContent property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_justify_content(node, justify)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "justify",
+            "description": "The justification to use"
+          }
+        ],
+        "title": "flexpanel_node_style_set_justify_content"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_margin": {
+    "name": "flexpanel_node_style_set_margin",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_margin.htm",
+        "blurb": "This function sets the margin for the given edge(s) of a Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_margin(node, edge, size, [unit])",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to set the margin of"
+          },
+          {
+            "argument": "size",
+            "description": "The size of the margin"
+          },
+          {
+            "argument": "unit",
+            "description": "OPTIONAL The unit in which the margin is expressed. Defaults to flexpanel_unit.point."
+          }
+        ],
+        "title": "flexpanel_node_style_set_margin"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_max_height": {
+    "name": "flexpanel_node_style_set_max_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_max_height.htm",
+        "blurb": "This function sets the maxHeight property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_max_height(node, value, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "value",
+            "description": "The value to use"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit of the value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_max_height"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_max_width": {
+    "name": "flexpanel_node_style_set_max_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_max_width.htm",
+        "blurb": "This function sets the maxWidth property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_max_width(node, value, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "value",
+            "description": "The value to use"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit of the value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_max_width"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_min_height": {
+    "name": "flexpanel_node_style_set_min_height",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_min_height.htm",
+        "blurb": "This function sets the minHeight property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_min_height(node, value, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "value",
+            "description": "The value to use"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit of the value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_min_height"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_min_width": {
+    "name": "flexpanel_node_style_set_min_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_min_width.htm",
+        "blurb": "This function sets the minWidth property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_min_width(node, value, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "value",
+            "description": "The value to use"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit of the value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_min_width"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_padding": {
+    "name": "flexpanel_node_style_set_padding",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_padding.htm",
+        "blurb": "This function sets the padding for the given edge(s) of a Flex Panel Node. You can pass one of the following enum members for the edge:",
+        "syntax": "flexpanel_node_style_set_padding(node, edge, size, [unit])",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to set the padding for"
+          },
+          {
+            "argument": "size",
+            "description": "The size of the padding"
+          },
+          {
+            "argument": "unit",
+            "description": "OPTIONAL The unit in which the padding is expressed. Defaults to flexpanel_unit.point."
+          }
+        ],
+        "title": "flexpanel_node_style_set_padding"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_position": {
+    "name": "flexpanel_node_style_set_position",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_position.htm",
+        "blurb": "This function sets an inset position of the given Flex Panel Node. You must specify the edge to set the position for, the position value and the unit of the value (whether it's pixels or a percentage).",
+        "syntax": "flexpanel_node_style_set_position(node, edge, value, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "edge",
+            "description": "The edge to set the position for"
+          },
+          {
+            "argument": "value",
+            "description": "The value to use"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit of the value"
+          }
+        ],
+        "title": "flexpanel_node_style_set_position"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_position_type": {
+    "name": "flexpanel_node_style_set_position_type",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_position_type.htm",
+        "blurb": "This function sets the position property of the given Flex Panel Node. It can be one of the following enum members:",
+        "syntax": "flexpanel_node_style_set_position_type(node, position_type)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "position_type",
+            "description": "The position type to set"
+          }
+        ],
+        "title": "flexpanel_node_style_set_position_type"
+      }
+    ]
+  },
+  "flexpanel_node_style_set_width": {
+    "name": "flexpanel_node_style_set_width",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/beta/en/GameMaker_Language/GML_Reference/Flex_Panels/Function_Reference/Styling_Functions/flexpanel_node_style_set_width.htm",
+        "blurb": "This function sets the width property of the given Flex Panel Node.",
+        "syntax": "flexpanel_node_style_set_width(node, width, unit)",
+        "args": [
+          {
+            "argument": "node",
+            "description": "The node to modify"
+          },
+          {
+            "argument": "width",
+            "description": "The width to set"
+          },
+          {
+            "argument": "unit",
+            "description": "The unit to use for the width"
+          }
+        ],
+        "title": "flexpanel_node_style_set_width"
+      }
+    ]
+  },
+}
+>>>>>>> Stashed changes
