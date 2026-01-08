@@ -45379,7 +45379,6 @@
       }
     ]
   },
-  "syntax": "extension_get_version(extension_name)",
   "flexpanel_calculate_layout": {
     "name": "flexpanel_calculate_layout",
     "pages": [
