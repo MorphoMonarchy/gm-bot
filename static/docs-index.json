@@ -45367,6 +45367,18 @@
       }
     ]
   },
+  "test": {
+    "name": "test",
+    "pages": [
+      {
+        "url": "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Web_And_HTML5/webgl_enabled.htm",
+        "blurb": "This read-only variable will return whether WebGL is enabled (true) or not (false) for your game. It will only work for those games running through a browser (ie: HTML5), and for all other platforms it will return true.",
+        "syntax": "webgl_enabled",
+        "args": [],
+        "title": "webgl_enabled"
+      }
+    ]
+  },
   "webgl_enabled": {
     "name": "webgl_enabled",
     "pages": [
